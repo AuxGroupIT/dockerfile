@@ -4,9 +4,21 @@ AUX jenkins:2.7.2 & jenkins:2.7.2-plugins
 使用方法
 -----------
 
+镜像地址
+
     docker pull 100.100.20.216/aux-pub/jenkins:2.7.2-plugins
 
     docker pull 100.100.20.216/aux-pub/jenkins:2.7.2
+
+启动方法：
+
+docker run -p 8080:8080 -p 50000:50000 \
+-d -v /var/run/docker.sock:/var/run/docker.sock \
+-v /var/jenkins_home:/var/jenkins_home -e JAVA_OPTS="-Xmx768m" \
+-e JAVA_OPTS=-Duser.timezone=Asia/Shanghai \
+--name aux-jenkins  100.100.20.216/aux-pub/jenkins:2.7.2-plugins
+
+
 
 2.7.2-plugins 镜像Dockfile说明
 -----------
