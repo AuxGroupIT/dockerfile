@@ -20,8 +20,7 @@ docker run -p 8080:8080 -p 50000:50000 \
 --name aux-jenkins  100.100.20.216/aux-pub/jenkins:2.7.2-plugins
 ```
 
-运行截图
-(https://raw.githubusercontent.com/AuxGroupIT/dockerfile/master/jenkins/show.png)
+![运行截图](https://raw.githubusercontent.com/AuxGroupIT/dockerfile/master/jenkins/show.png)
 
 
 
